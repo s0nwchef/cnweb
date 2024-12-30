@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Electronics Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            background-color: #00bfff;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-group .register {
+            background-color: #00bfff;
+            color: white;
+        }
+        .button-group .cancel {
+            background-color: #ff6347;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>Jackson Electronics</h1>
+        </div>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name">
+            </div>
+            <div class="form-group">
+                <label for="address1">Address #1:</label>
+                <input type="text" id="address1" name="address1">
+            </div>
+            <div class="form-group">
+                <label for="address2">Address #2:</label>
+                <input type="text" id="address2" name="address2">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip:</label>
+                <input type="text" id="zip" name="zip">
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" value="United States">
+            </div>
+            <div class="form-group">
+                <label for="product">Product:</label>
+                <select id="product" name="product">
+                    <option value="ScanMaster">ScanMaster</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date-purchased">Date Purchased:</label>
+                <input type="date" id="date-purchased" name="date_purchased">
+            </div>
+            <div class="form-group">
+                <label for="serial">Serial #:</label>
+                <input type="text" id="serial" name="serial">
+            </div>
+            <div class="form-group">
+                <label>Used for:</label>
+                <input type="radio" id="home" name="used_for" value="Home">
+                <label for="home">Home</label>
+                <input type="radio" id="business" name="used_for" value="Business">
+                <label for="business">Business</label>
+                <input type="radio" id="government" name="used_for" value="Government">
+                <label for="government">Government</label>
+                <input type="radio" id="education" name="used_for" value="Educational Institution">
+                <label for="education">Educational Institution</label>
+                <input type="radio" id="other" name="used_for" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-group">
+                <label>System (check all that apply):</label>
+                <input type="checkbox" id="windows" name="system" value="Windows">
+                <label for="windows">Windows</label>
+                <input type="checkbox" id="macintosh" name="system" value="Macintosh">
+                <label for="macintosh">Macintosh</label>
+                <input type="checkbox" id="unix" name="system" value="UNIX">
+                <label for="unix">UNIX</label>
+                <input type="checkbox" id="other-system" name="system" value="Other">
+                <label for="other-system">Other</label>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="register">Click to register</button>
+                <button type="reset" class="cancel">Click to cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
